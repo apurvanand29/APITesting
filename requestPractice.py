@@ -10,6 +10,11 @@ url = 'https://jsonplaceholder.typicode.com/posts/1'
 request = requests.get(url=url,)
 jsonres = request.json()
 print(type(request))
-print(request.status_code)
+code = request.status_code
+try:
+ assert code ==204
+ print("✅ Status code is 200 - Test Passed!")
+except AssertionError:
+    print(f"❌ Status code was {code} - Test Failed.")
 print(jsonres['id'])
 print(jsonres['title'])
