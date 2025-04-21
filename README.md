@@ -50,6 +50,7 @@ Each action checks HTTP status codes to ensure proper behavior.
 
 ## ✅ Test Scenarios Covered
 Method	Endpoint	Decription	Status Check
+
 GET	/posts/1 (JSONPlaceholder)	Retrieve specific post	200
 GET	/posts (JSONPlaceholder)	Validate title by ID	200
 POST	/posts (JSONPlaceholder)	Create a new post	201
